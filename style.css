@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f9f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.app {
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c7a4b;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #2c7a4b;
+  border-radius: 6px;
+}
+
+.task-input button {
+  background: #2c7a4b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f5f5f5;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+  background: #e2e2e2; /* slightly darker than normal task */
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+#tree {
+  width: 150px;
+  margin: 10px auto;
+}
+/* Task action buttons */
+li button {
+  margin-left: 6px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Done/Undo button */
+li button:first-of-type {
+  background: #2c7a4b;
+  color: white;
+}
+
+/* Delete button */
+li button:last-of-type {
+  background: #e63946;
+  color: white;
+}
+/* Make task text + buttons line up */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Group buttons */
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
