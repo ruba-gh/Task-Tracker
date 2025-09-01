@@ -83,6 +83,7 @@ function updateTree() {
   if (completedCount >= 6) stage = 2;
   if (completedCount >= 9) stage = 3;
 
-  tree.src = `assets/tree${stage}.PNG`;
+  tree.src = `assets/tree${stage}.png`;
 }
+
 
